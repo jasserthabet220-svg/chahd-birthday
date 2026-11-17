@@ -1,0 +1,291 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday Chahd ❤️</title>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;1,600&family=Poppins:wght@300;400;600&display=swap');
+
+*{box-sizing:border-box}
+
+body{
+ margin:0;
+ background:linear-gradient(140deg,#180711,#541b37,#210b1a);
+ color:#fff0f4;
+ font-family:Poppins,sans-serif;
+ text-align:center;
+ overflow-x:hidden;
+}
+
+section{
+ padding:65px 20px;
+ max-width:850px;
+ margin:auto;
+}
+
+h1,h2{font-family:'Playfair Display',serif}
+
+h1{
+ font-size:clamp(48px,12vw,85px);
+ color:#ffc1d4;
+}
+
+h2{font-size:38px;color:#f5b2c7}
+
+p{line-height:1.9}
+
+button{
+ background:#edabc2;
+ color:#45162b;
+ border:0;
+ border-radius:30px;
+ padding:15px 28px;
+ font-size:16px;
+ font-weight:bold;
+ cursor:pointer;
+ margin:12px;
+}
+
+.hidden{display:none}
+
+.heart{
+ font-size:35px;
+ animation:pulse 1s infinite;
+}
+
+@keyframes pulse{
+ 50%{transform:scale(1.3)}
+}
+
+.photos{
+ display:grid;
+ grid-template-columns:1fr 1fr;
+ gap:15px;
+ margin-top:30px;
+}
+
+.photos img{
+ width:100%;
+ height:390px;
+ object-fit:cover;
+ border-radius:22px;
+ border:2px solid #eaa4bd;
+}
+
+.letter{
+ background:#ffffff12;
+ border:1px solid #eaa4bd66;
+ border-radius:22px;
+ padding:25px;
+ text-align:left;
+ line-height:2;
+}
+
+.song{
+ display:block;
+ margin:12px auto;
+ background:#ffffff16;
+ color:white;
+ border:1px solid #eaa4bd;
+ width:100%;
+ max-width:450px;
+}
+
+iframe{
+ width:100%;
+ height:220px;
+ border:0;
+ border-radius:15px;
+}
+
+.floating{
+ position:fixed;
+ bottom:-30px;
+ animation:rise 7s linear forwards;
+ pointer-events:none;
+}
+
+@keyframes rise{
+ to{
+ transform:translateY(-110vh) rotate(360deg);
+ opacity:0;
+ }
+}
+
+@media(max-width:600px){
+ .photos{grid-template-columns:1fr}
+ .photos img{height:auto;max-height:500px}
+}
+</style>
+</head>
+
+<body>
+
+<section id="welcome">
+ <div class="heart">♡</div>
+ <p>A LITTLE SURPRISE FOR SOMEONE SPECIAL</p>
+
+ <h1>Happy Birthday<br>Chahd</h1>
+
+ <p>To the girl who makes my world brighter.</p>
+
+ <button onclick="openGift()">
+ OPEN YOUR GIFT ❤️
+ </button>
+</section>
+
+<div id="gift" class="hidden">
+
+<section>
+ <h2>My Sunshine ☀️</h2>
+
+ <p>
+ Today is not just another day.
+ Today is the birthday of the person
+ who brings so much light into my life.
+ </p>
+
+ <div class="photos">
+  <img src="assets/chahed-yellow-dress.jpg" alt="Chahd">
+  <img src="assets/chahed-cafe.jpg" alt="Chahd">
+ </div>
+
+ <p>My beautiful girl, my sunshine. 🌷</p>
+</section>
+
+<section>
+ <h2>A Song For You 🎶</h2>
+
+ <p>Choose the song you want to hear, my love.</p>
+
+ <button class="song" onclick="play('iggmiF7DNoM')">
+ We Fell in Love in October 🌷
+ </button>
+
+ <button class="song" onclick="play('9bFHsd3o1w0')">
+ My Heart Will Go On ❤️
+ </button>
+
+ <button class="song" onclick="play('OTJtq2DGGk8')">
+ I Will Always Love You
+ </button>
+
+ <div id="music"></div>
+</section>
+
+<section>
+ <h2>A Letter From My Heart 💌</h2>
+
+ <div class="letter">
+
+ <p>Happy birthday to the most beautiful soul, my Chahd. ❤️</p>
+
+ <p>
+ I wish I could put into words just how much you mean to me,
+ but somehow, every sentence feels too small for what I feel.
+ You are so much more than someone I love.
+ You are the calm in my chaos, the smile behind so many
+ of my happiest moments, and the light that makes even
+ my darkest days feel warmer.
+ </p>
+
+ <p>
+ You have this beautiful way of making life better without
+ even trying. Your smile can change my entire day.
+ Your voice can make everything feel okay.
+ Just knowing that you are in my life gives me a happiness
+ I never want to take for granted.
+ </p>
+
+ <p>
+ I hope you see yourself through my eyes, even for a moment.
+ I hope you see how special you are, how beautiful your heart is,
+ and how effortlessly you make the world around you brighter.
+ You deserve every beautiful thing this life has to offer:
+ endless happiness, peaceful days, exciting dreams,
+ and love that never makes you question your worth.
+ </p>
+
+ <p>
+ On your birthday, I wish you a year full of reasons to smile,
+ moments that take your breath away, dreams coming true,
+ and memories you'll keep close to your heart.
+ I hope I get to be beside you through the little moments
+ and the big ones, supporting you, making you laugh,
+ and reminding you every day how loved you are.
+ </p>
+
+ <p>
+ Thank you for being you.
+ Thank you for coming into my life and making it sweeter,
+ warmer, and more beautiful.
+ If I could choose one person to find in every lifetime,
+ I would still choose you.
+ In every version of this world, in every season,
+ and in every October.
+ </p>
+
+ <p>
+ Happy birthday, my sunshine.
+ Keep shining, keep smiling, and never forget
+ that you are one of the most precious parts of my life.
+ I am so lucky to love you.
+ </p>
+
+ <h2 style="text-align:center">
+ I LOVE YOU, CHAHD. ❤️
+ </h2>
+
+ <p style="text-align:center">
+ Today, tomorrow, and always.
+ </p>
+
+ </div>
+</section>
+
+</div>
+
+<script>
+
+function openGift(){
+
+ document.getElementById('gift').classList.remove('hidden');
+
+ document.getElementById('gift').scrollIntoView({
+  behavior:'smooth'
+ });
+
+ setInterval(()=>{
+
+  let h=document.createElement('div');
+
+  h.className='floating';
+
+  h.innerHTML=['❤️','💕','🌹','🌸','✨'][Math.floor(Math.random()*5)];
+
+  h.style.left=Math.random()*100+'vw';
+
+  h.style.fontSize=(20+Math.random()*20)+'px';
+
+  document.body.appendChild(h);
+
+  setTimeout(()=>h.remove(),7000);
+
+ },400);
+}
+
+function play(id){
+
+ document.getElementById('music').innerHTML=
+
+ '<iframe allow="autoplay; encrypted-media" allowfullscreen src="https://www.youtube-nocookie.com/embed/'+id+'?autoplay=1"></iframe>';
+
+}
+
+</script>
+
+</body>
+</html>
